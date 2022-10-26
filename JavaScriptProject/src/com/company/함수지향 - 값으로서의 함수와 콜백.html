@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        /*function cal(func, num) {
+            return func(num);
+        }
+
+        function increase(num) {
+            return num + 1;
+        }
+
+        function decrease(num) {
+            return num - 1;
+        }*/
+
+        /*function cal(mode) {
+            var funcs = {
+                'plus': function (left, right) {
+                    return left + right;
+                },
+                'minus': function (left, right) {
+                    return left - right;
+                }
+            }
+            return funcs[mode];
+        }*/
+
+        //callback func
+        var numbers = [20, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1];
+        var sortfunc = function (a, b) {
+            return a - b;
+        };
+
+        alert(numbers.sort(sortfunc));
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
