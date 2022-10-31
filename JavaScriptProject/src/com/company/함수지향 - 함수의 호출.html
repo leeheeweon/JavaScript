@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function func() {
+
+        }
+
+        func();
+        /*
+
+                function sum(arg1, arg2) {
+                    return arg1 + arg2;
+                }
+
+                alert(sum.apply(null, [1, 2]));
+        */
+
+        var o1 = {val1: 1, val2: 2, val3: 3};
+        var o2 = {v1: 10, v2: 50, v3: 100, v4: 25};
+
+        function sum() {
+            var _sum = 0;
+            for (name in this) {
+                _sum += this[name];
+            }
+            return _sum;
+        }
+
+        alert(sum.apply(o1));
+        alert(sum.apply(02));
+    </script>
+</head>
+<body>
+
+</body>
+</html>
