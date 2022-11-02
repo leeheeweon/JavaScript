@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function func() {
+            alert('Hello?');
+        }
+
+        func();
+        window.func();
+
+        var o = {
+            'func': function () {
+                alert('Hello?');
+            }
+        };
+        o.func();
+        window.o.func();
+    </script>
+</head>
+<body>
+
+</body>
+</html>
