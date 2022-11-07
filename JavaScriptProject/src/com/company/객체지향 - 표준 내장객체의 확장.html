@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        /*
+                var arr = new Array('seoul', 'new york', 'ladarkh', 'pusan', 'Tsukuba');
+
+                function getRandomValueFromArray(arr) {
+                    var index = Math.floor(arr.length * Math.random());
+                    return arr[index];
+                }
+
+                getRandomValueFromArray(arr);
+        */
+
+        Array.prototype.random = function () {
+            var index = Math.floor(this.length * Math.random());
+            return this[index];
+        };
+        var arr = new Array('seoul', 'new york', 'ladarkh', 'pusan', 'Tsukuba');
+        alert(arr.random());
+    </script>
+</head>
+<body>
+
+</body>
+</html>
