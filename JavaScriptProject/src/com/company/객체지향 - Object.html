@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        Object.prototype.contain = function (needle) {
+            for (var name in this) {
+                if (this[name] === needle) {
+                    return true;
+                }
+            }
+            return false;
+        };
+        var arr = ['a', 'b', 'c'];
+        console.log('Object.keys(arr)' + Object.keys(arr));
+        console.log(arr.contain("a"));
+
+        var o = {"name": "leeheeweon", "age": 29, "city": "seoul"};
+        console.log(o.toString());
+        console.log(o.contain("leeheeweon"));
+    </script>
+</head>
+<body>
+
+</body>
+</html>
