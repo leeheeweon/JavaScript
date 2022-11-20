@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function travers(target, callback) {
+            if (target.nodeType === Node.ELEMENT_NODE) {
+                if (target.nodeName === 'A') {
+                    callback(target);
+                }
+                var c = target.childNodes;
+                for (var i = 0; i < c.length; i++) {
+                    travers(c[i], callback);
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>
