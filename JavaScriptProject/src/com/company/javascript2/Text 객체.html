@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var target = document.getElementById('target').firstChild;
+        var data = document.getElementById('datasource');
+        var start = document.getElementById('start');
+        var end = document.getElementById('end');
+
+        function callAppendData() {
+            target.appendData(data.value);
+        }
+
+        function callDeleteData() {
+            target.deleteData(start.value, end.value);
+        }
+
+        function callInsertData() {
+            target.insertData(start.value, data.value);
+        }
+
+        function callReplaceData() {
+            target.replaceData(start.value, end.value, data.valueOf());
+        }
+
+        function callSubstringData() {
+            alert(target.substringData(start.value, end.value));
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>
