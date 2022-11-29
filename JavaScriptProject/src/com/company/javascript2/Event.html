@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <script>
-
+        $("#test").on('click',function (event){
+            alert("test");
+        })
     </script>
 </head>
 <body>
-<input type="button" onclick="alert(window.location)" value="alert(window.location)">
+<input type="button" id="test" onclick="alert(window.location)" value="alert(window.location)">
 </body>
 </html>
